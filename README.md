@@ -111,6 +111,16 @@ It is a rewrite-and-structure workflow that focuses on:
 
 These three skills are meant to work as a chain:
 
+```mermaid
+flowchart TD
+    A[Raw X/Twitter content] --> B[x行情观点搜索\nWhat is the market saying now?]
+    B --> C[Representative tweets\nRecurring authors\nMarket split]
+    C --> D[x高质量分析账号筛选\nWho is worth tracking long term?]
+    D --> E[Research watchlist\nAccount pool]
+    E --> F[x推文研究转内容\nTurn external material into Chinese assets]
+    F --> G[Chinese summaries\nPost drafts\nThread outlines\nTopic ideas]
+```
+
 ```text
 Raw X/Twitter content
         ↓
