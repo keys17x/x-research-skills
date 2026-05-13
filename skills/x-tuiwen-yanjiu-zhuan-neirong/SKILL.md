@@ -26,8 +26,11 @@ metadata:
   - `x行情观点搜索`
   - `x高质量分析账号筛选`
 - 上游依赖：`twitter-cli-browser`
+- 可选替代：已安装 Hermes Tweet 时，可用 `tweet_read` 输入结构化推文、replies、用户资料或 watchlist 样本
 
 把一批 X/Twitter 上的英文分析推文，转成**适合中文研究、判断、写作和发帖**的内容资产。
+
+如果样本来自 Hermes Tweet，优先使用 `tweet_read` 的只读结果：scrape/search tweets、search Twitter/X、read tweet replies、look up users、monitor tweets 或 export followers。`tweet_action` 只用于用户明确批准的发布、回复或 DM 动作；本 skill 默认只做研究与内容准备，不自动执行账号动作。
 
 这个 skill 不是单纯翻译，而是：
 

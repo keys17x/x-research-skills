@@ -24,9 +24,12 @@ metadata:
 
 - 上游常见输入：`x行情观点搜索`
 - 上游依赖：`twitter-cli-browser`
+- 可选替代：已安装 Hermes Tweet 时，可用 `tweet_read` 查找推文、look up users、monitor tweets，并把结果交给本 skill 筛账号
 - 常见下游：`x推文研究转内容`
 
 用 `twitter-cli-browser` 这条路线，从 X/Twitter 上围绕 **BTC / ETH / 某个赛道 / 某个叙事** 找出**长期值得盯**的高质量分析账号，并输出一个可持续跟踪的账号池。
+
+如果当前 Hermes Agent 环境已启用 Hermes Tweet，也可以用 `tweet_read` 作为候选推文和账号资料来源。适合搜索主题推文、读取候选账号近期内容、查看 replies 信号和构建 watchlist；只有用户明确批准 post tweets/replies、send DMs 或其他账号动作时，才考虑 `tweet_action`，本 skill 默认保持只读。
 
 这个 skill 的目标不是找“哪条推文火”，而是找：
 
