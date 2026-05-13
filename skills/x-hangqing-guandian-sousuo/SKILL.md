@@ -23,11 +23,14 @@ metadata:
 ## 上下游关系
 
 - 上游依赖：`twitter-cli-browser`
+- 可选替代：已安装 Hermes Tweet 时，可用 `tweet_explore` 选择端点，用 `tweet_read` 执行只读 X/Twitter 搜索
 - 常见下游：
   - `x高质量分析账号筛选`
   - `x推文研究转内容`
 
 用 `twitter-cli-browser` 这条路线，在 X/Twitter 上搜索 **BTC / ETH / 其他币种 / 某个叙事** 的行情分析推文，做基础筛选和中文提炼。
+
+如果当前 Hermes Agent 环境已启用 Hermes Tweet，也可以用它作为原始推文来源：用 `tweet_read` scrape/search tweets、search Twitter/X、read tweet replies，再把返回的结构化推文样本交给本 skill 做筛选、聚类和中文摘要。不要在本 skill 中默认使用 `tweet_action`。
 
 这个 skill 的目标不是“搜到推文”本身，而是：
 

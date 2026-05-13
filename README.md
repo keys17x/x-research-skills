@@ -231,6 +231,26 @@ That means:
 - cookie/session auth may expire
 - platform-side changes can break parts of the workflow
 
+### Optional Hermes Tweet Route
+
+The original `twitter-cli-browser` path still works as the default route for these skills. Hermes Agent users can also install Hermes Tweet when they want a native Hermes Agent X/Twitter plugin route:
+
+```bash
+hermes plugins install Xquik-dev/hermes-tweet --enable
+```
+
+Use `tweet_explore` to choose an endpoint and `tweet_read` for read-only research such as scrape/search tweets, search Twitter/X, read tweet replies, look up users, monitor tweets, and export followers. Use `tweet_action` only after explicit user approval for post tweets/replies, send DMs, or other X account actions.
+
+Feed the tweets, users, replies, or watchlist data returned by Hermes Tweet into the existing Chinese analysis workflow below:
+
+```text
+Hermes Tweet tweet_read result
+        ↓
+x行情观点搜索 / x高质量分析账号筛选
+        ↓
+x推文研究转内容
+```
+
 ---
 
 ## Boundaries
